@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{145893E0-FEF0-430A-91C5-60BBF2A2CFAE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeusContatos.Api", "src\MeusContatos.Api\MeusContatos.Api.csproj", "{024A2B37-3982-45C1-9E52-4BCDEA20CC67}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{024A2B37-3982-45C1-9E52-4BCDEA20CC67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{024A2B37-3982-45C1-9E52-4BCDEA20CC67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{024A2B37-3982-45C1-9E52-4BCDEA20CC67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{024A2B37-3982-45C1-9E52-4BCDEA20CC67}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{024A2B37-3982-45C1-9E52-4BCDEA20CC67} = {145893E0-FEF0-430A-91C5-60BBF2A2CFAE}
+	EndGlobalSection
+EndGlobal
