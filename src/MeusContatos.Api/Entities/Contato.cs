@@ -6,11 +6,7 @@ namespace MeusContatos.Api.Entities
     [Table("contato")]
     public class Contato
     {
-        public Contato()
-        {
-            //DtCadastro = DateTime.Now;
-        }
-
+        
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [Column("id")]

@@ -9,18 +9,18 @@ namespace MeusContatos.Api.Controllers
     [Route("[controller]")]
     public class ContatosController : ControllerBase
     {
-        private ContatoDbContext dbContext;
+        private ClasseGeraldbContext dbContext;
 
         public ContatosController()
         {
-            dbContext = new ContatoDbContext();
+            dbContext = new ClasseGeraldbContext();
         }
-
+        //CREATE
         [HttpPost]
         public IActionResult Create(
            [FromBody] Contato contato)
         {
-            dbContext.Contatos.Add(contato);
+            dbContext.Contatos?.Add(contato);
             dbContext.SaveChanges();
 
             return Ok(contato);
@@ -41,13 +41,13 @@ namespace MeusContatos.Api.Controllers
             [FromRoute] int id,
             [FromBody] Contato contatoAtualizar)
         {
-            var contato = dbContext.Contatos.Find(id);
+            var contato = dbContext.Contatos?.Find(id);
             contato.Nome = contatoAtualizar.Nome;
             contato.Telefone = contatoAtualizar.Telefone;
-            dbContext.Contatos.Update(contato);
+            dbContext.Contatos?.Update(contato);
             dbContext.SaveChanges();
 
-            return Ok();
+            return Ok(contato);
         }
 
         // DELETE
@@ -59,7 +59,7 @@ namespace MeusContatos.Api.Controllers
             dbContext.Contatos.Remove(contato);
             dbContext.SaveChanges();
 
-            return Ok();
+            return Ok(contato);
         }
     }
 }
